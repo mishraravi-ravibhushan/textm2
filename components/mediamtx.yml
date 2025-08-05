@@ -1,0 +1,3 @@
+paths:
+  cam:
+    source: rtsp://rtspstream:rgt8sA6-uQC0qpMJmNi0q@zephyr.rtsp.stream/traffic

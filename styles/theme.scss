@@ -1,0 +1,126 @@
+// Inter Fonts materialdesignicons
+@import "@mdi/font/css/materialdesignicons.min.css";
+
+// Inter Fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Font Awesome
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css");
+
+// Feathers CSS for Before Icon
+@import url("/fonts/feather-icons/feather.css");
+
+// Bootstrap functions
+@import "~bootstrap/scss/functions";
+
+// User Variables
+@import "user-variables";
+
+// theme variables
+@import "theme/variables";
+
+//utilities
+@import "theme/utilities";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Theme
+@import "theme/theme";
+
+// User
+@import "user";
+@import "feather";
+
+.heading-permalink {
+  color: transparent;
+  margin-left: -2rem;
+  &:hover {
+    color: transparent;
+  }
+
+  &::before {
+    color: rgba(82, 95, 127, 0);
+    content: "#";
+  }
+  &:hover:before {
+    color: $primary;
+  }
+}
+body {
+	&.login {
+		background: #9053c7;
+		background: url("../public/texmin-background.webp") no-repeat center;
+    .card-body {
+			background: #f7f7f7;
+		}
+	}
+}
+.backgounddark {
+	background-color: $gray-800;
+}
+.flash-error {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background-color: #f44336;
+	color: white;
+	padding: 12px 20px;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	button {
+		background: transparent;
+		border: none;
+		color: white;
+		font-size: 18px;
+		cursor: pointer;
+	}
+}
+.flash-success {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background-color: #68d3b8;
+	color: white;
+	padding: 12px 20px;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+$background-color_1: #0d6efd;
+
+/* Firefox support */
+.custom-scroll {
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+	&::-webkit-scrollbar-track {
+		background: #f8f9fa;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: $background-color_1;
+		border-radius: 10px;
+		border: 2px solid #f8f9fa;
+	}
+	scrollbar-width: thin;
+	scrollbar-color: #0d6efd #f8f9fa;
+}
+
+  @media (min-width: 992px) {
+	.widthfilter {
+	  width: 23%;
+	}
+	.widthfilter18 {
+		width: 18%;
+	  }
+	  .widthfilter13 {
+		width: 13%;
+	  }
+  }

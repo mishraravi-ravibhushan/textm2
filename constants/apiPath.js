@@ -1,0 +1,1 @@
+export const API_BASE_URL = 'http://143.244.140.123:3001/mining/'; // Replace with your Laravel API URL
